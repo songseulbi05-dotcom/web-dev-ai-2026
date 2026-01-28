@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>주문하기</h1>
+    <form action="" method="post">
+      
+      고객명: <input type="text" name="name" required /><br /><br />
+      전화번호: <input type="tel" name="phone" required /><br /><br />
+      이메일: <input type="email" name="email" required /><br /><br />
+    </form>
+    
+    <fieldset>
+      <legend>피자 사이즈</legend>
+      <input type="radio" name="size" value="small" required />
+      <label for="small">작은 피자</label>
+      <input type="radio" name="size" value="medium" />
+      <label for="medium">중간 피자</label>
+      <input type="radio" name="size" value="large" />
+      <label for="large">큰 피자</label>
+    </fieldset>
+    <br />
+    
+    <fieldset>
+      <legend>토핑 선택</legend>
+      <input type="checkbox" name="topping" value="becon" />
+      <label for="becon">베이컨</label>
+      <input type="checkbox" name="topping" value="cheese" />
+      <label for="cheese">치즈</label>
+      <input type="checkbox" name="topping" value="onions" />
+      <label for="onions">양파</label>
+      <input type="checkbox" name="topping" value="mushroom" />
+      <label for="mushroom">버섯</label>
+    </fieldset>
+    <br />
+    
+    <form action="">
+        희망 배송 시간 <input type="time" />
+        <br /><br />
+     
+    </form>
+
+      배송 시 요청 사항
+      <textarea
+        name="request"
+        placeholder="내용을 입력하세요"
+        rows="5"
+        cols="30"
+      ></textarea>
+      <br /><br />
+      <button type="submit">주문하기</button>
+    </form>
+  </body>
+</html>
