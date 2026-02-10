@@ -5,7 +5,11 @@ const result = document.querySelector("#result");
 
 const imgArr = ["./essets/spy1.jpg", "./essets/spy2.jpg", "./essets/spy3.jpg"];
 
+let clickCount = 0;
+
 clickBtn.addEventListener("click", () => {
+  clickCount++;
+  clickBtn.textContent = "Click " + clickCount;
   let values = [];
 
   for (let i = 0; i < imgs.length; i++) {
